@@ -6,3 +6,5 @@ Once the library tables have been created we wil create a series of useful queri
 1. A library card holder, who needs to do things like lookup an item to if it can be borrowed, see what they have borrowed currently, when an item is due to be returned. 
 2. A library employee, who needs to check when an item is over due and assign appropriate fees, check the availability of an item, assess returned items for damage, see if another library has an item for an inter-library loan
 3. A manager, who needs to be able to check addresses of employees, alter salaries.
+
+Once we have the data in the database and working queries, we will build out a user interface that allows users to query the database and use the library databse as though it were a real database for a real in use library.
