@@ -1,0 +1,87 @@
+use libraryDB;
+
+#INsert into library    attributes - Locationname, address, libraryID, membershipFee		
+insert into library values ("James E Walker Library", "1611 Alumni Dr, Murfreesboro, TN 37132", "123456789", 0.0);
+insert into library values ("National Archives", "700 Pennsylvania Avenue NW, Washington, D.C., U.S.", "987654321", 0.0);
+insert into library values ("Brooklyn Public Library", "10 Grand Army Plz, Brooklyn, NY 11238", "111111111", 50);
+
+#Insert into MovieList 
+#attributes - title, genre, studio, rating, profit, release_date, housed in, num copies
+insert into movielist values("Zack and Miri Make a Porno","Romance","The Weinstein Company", 70, 1.7475, 2008, "123456789", 3);
+insert into movielist values("Youth in Revolt", "Comedy",	"The Weinstein Company",52,	1.09, 2010, "123456789", 1);
+insert into movielist values("You Will Meet a Tall Dark Stranger","Comedy","Independent",35,1.211818182, 2010, "123456789", 2);
+insert into movielist values("When in Rome","Comedy","Disney",44,0,	2010, "123456789", 3);
+insert into movielist values("What Happens in Vegas","Comedy",	"Fox",72,6.267647029,2008, "123456789", 5);
+insert into movielist values("Water For Elephants",	"Drama","20th Century Fox",	72,	3.081421053,2011,"123456789",3);
+insert into movielist values("WALL-E",	"Animation","Disney",89,2.896019067,2008,"123456789",3);
+insert into movielist values("Waitress","Romance","Independent",67,	11.0897415,	2007, "123456789", 2);
+insert into movielist values("Waiting For Forever",	"Romance",	"Independent",53,0.005,2011,"123456789",2);
+insert into movielist values("Valentine's Day",	"Comedy","Warner Bros.",54,	4.184038462,2010,"123456789",3);
+insert into movielist values("Tyler Perry's Why Did I get Married",	"Romance","Independent",47,	3.7241924,2007, "123456789",3);
+insert into movielist values("Twilight: Breaking Dawn",	"Romance",	"Independent",68,6.383363636,2011, "123456789", 6);
+insert into movielist values("Twilight","Romance",	"Summit",82,10.18002703,2008, "123456789", 2);
+insert into movielist values("The Ugly Truth",	"Comedy",	"Independent",68,5.402631579,2009, "123456789", 2);
+insert into movielist values("The Twilight Saga: New Moon",	"Drama","Summit",78,14.1964,2009,"123456789",3);
+insert into movielist values("The Time Traveler's Wife","Drama","Paramount",65,	2.598205128,2009, "123456789",3);
+insert into movielist values("The Proposal","Comedy","Disney",74,7.8675,2009, "987654321", 20);
+insert into movielist values("The Invention of Lying",	"Comedy","Warner Bros.",47,	1.751351351,2009, "987654321",3);
+insert into movielist values("The Heartbreak Kid",	"Comedy","Paramount",41,2.129444167,2007,"987654321",2);
+insert into movielist values("The Duchess",	"Drama","Paramount",68,	3.207850222,2008,"987654321",3);
+insert into movielist values("The Curious Case of Benjamin Button",	"Fantasy",	"Warner Bros.",	81,	1.78394375,2008,"987654321",3);
+insert into movielist values("The Back-up Plan","Comedy","CBS",	47,	2.202571429,2010,"987654321",3);
+insert into movielist values("Tangled",	"Animation","Disney",88,	1.365692308,2010,"987654321",5);
+insert into movielist values("Something Borrowed",	"Romance","Independent",48,	1.719514286,2011, "987654321", 3);
+insert into movielist values("She's Out of My League","Comedy",	"Paramount",60,	2.4405,2010,"987654321",2);
+insert into movielist values("Sex and the City Two","Comedy","Warner Bros.",49,	2.8835,2010, "987654321",2);
+insert into movielist values("Sex and the City","Comedy","Warner Bros.",81,	7.221795791,2008,"987654321",4);
+insert into movielist values("Remember Me",	"Drama","Summit",70,3.49125,2010, "987654321",2);
+insert into movielist values("Rachel Getting Married",	"Drama",	"Independent",	61,	1.384166667,2008,"987654321", 2);
+insert into movielist values("Penelope",	"Comedy",	"Summit"	,74,	1.382799733,2008,"987654321", 2);
+insert into movielist values("P.S. I Love You",	"Romance",	"Independent",	82,	5.103116833,2007,"987654321", 2);
+insert into movielist values("Over Her Dead Body",	"Comedy",	"New Line",	47,	2.071,2008,"987654321", 2);
+insert into movielist values("Our Family Wedding",	"Comedy",	"Independent",	49,	0,2010,"987654321", 2);
+insert into movielist values("One Day",	"Romance",	"Independent",	54,	3.682733333,2011,"987654321", 2);
+insert into movielist values("Not Easily Broken",	"Drama",	"Independent",	66,	2.14,2009,"987654321", 2);
+insert into movielist values("No Reservations",	"Comedy",	"Warner Bros.",	64,	3.307180357,2007, "987654321",3);
+insert into movielist values("Nick and Norah's Infinite Playlist",	"Comedy",	"Sony",	67,	3.3527293,2008, "987654321",3);
+insert into movielist values("New Year's Eve",	"Romance",	"Warner Bros.",	48,	2.536428571,2011, "987654321",3);
+insert into movielist values("My Week with Marilyn",	"Drama", "The Weinstein Company",	84,	0.8258,	2011, "987654321",3);
+insert into movielist values("Music and Lyrics",	"Romance",	"Warner Bros.",	70,	3.64741055,	2007, "987654321",3);
+insert into movielist values("Monte Carlo",	"Romance",	"20th Century Fox",	50	,1.9832,2011, "987654321",3);
+insert into movielist values("Miss Pettigrew Lives for a Day",	"Comedy",	"Independent",	70,	0.2528949,	2008, "987654321",3);
+insert into movielist values("Midnight in Paris",	"Romence",	"Sony",	84,	8.744705882,2011, "987654321",3);
+insert into movielist values("Marley and Me",	"Comedy",	"Fox",	77,	3.746781818,2008, "987654321",3);
+insert into movielist values("Mamma Mia!",	"Comedy",	"Universal",	76,	9.234453864,	2008, "987654321",3);
+insert into movielist values("Made of Honor",	"Comedy",	"Sony",	61,	2.64906835,	2008, "987654321",3);
+insert into movielist values("Love Happens",	"Drama",	"Universal",	40,	2.004444444,	2009, "987654321",3);
+insert into movielist values("Love & Other Drugs",	"Comedy",	"Fox",	55,	1.817666667, 	2010, "987654321",3);
+insert into movielist values("Life as We Know It",	"Comedy"	,"Independent",	62,	2.530526316,	2010, "987654321",3);
+insert into movielist values("License to Wed",	"Comedy",	"Warner Bros.",	55,	1.9802064,2007, "987654321",3);
+insert into movielist values("Letters to Juliet", "Comedy",	"Summit",	62,	2.639333333,	2010, "987654321",3);
+insert into movielist values("Leap Year",	"Comedy",	"Universal",	49,	1.715263158,2010, "987654321",3);
+insert into movielist values("Knocked Up",	"Comedy",	"Universal",	83,	6.636401848,2007, "987654321",3);
+insert into movielist values("Killers",	"Action",	"Lionsgate",	45,	1.245333333,2010, "987654321",3);
+insert into movielist values("Just Wright",	"Comedy",	"Fox",	58,	1.797416667,2010, "987654321",3);
+insert into movielist values("Jane Eyre",	"Romance",	"Universal",	77,	0,2011, "987654321",3);
+insert into movielist values("It's Complicated",	"Comedy",	"Universal",	63,	2.642352941,2009, "987654321",3);
+insert into movielist values("I Love You Phillip Morris",	"Comedy",	"Independent",	57,	1.34,2010, "987654321",3);
+insert into movielist values("High School Musical 3: Senior Year",	"Comedy",	"Disney",	76,	22.91313646,	2008, "987654321",3);
+insert into movielist values("He's Just Not That Into You",	"Comedy",	"Warner Bros.",	60,	7.1536,2009, "987654321",3);
+insert into movielist values("Good Luck Chuck",	"Comedy",	"Lionsgate",	61,	2.36768512,2007, "987654321",3);
+insert into movielist values("Going the Distance",	"Comedy",	"Warner Bros.",	56,	1.3140625,2010, "987654321",3);
+insert into movielist values("Gnomeo and Juliet",	"Animation",	"Disney",	52,	5.387972222,2011, "987654321",3);
+insert into movielist values("Ghosts of Girlfriends Past",	"Comedy",	"Warner Bros.",	47,	2.0444,	2009, "987654321",3);
+insert into movielist values("Four Christmases",	"Comedy",	"Warner Bros.",	52,	2.022925,2008, "987654321",3);
+insert into movielist values("Fireproof",	"Drama",	"Independent",	51,	66.934,2008, "987654321",3);
+insert into movielist values("Enchanted",	"Comedy",	"Disney",	80,	4.005737082,2007, "987654321",3);
+insert into movielist values("Dear John",	"Drama",	"Sony",	66,	4.5988,2010, "987654321",3);
+insert into movielist values("Beginners",	"Comedy",	"Independent",	80,	4.471875,2011, "987654321",3);
+insert into movielist values("Across the Universe",	"romance",	"Independent",	84,	0.652603178,2007, "987654321",3);
+insert into movielist values("A Serious Man",	"Drama",	"Universal",	64,	4.382857143,2009, "987654321",3);
+insert into movielist values("A Dangerous Method",	"Drama",	"Independent",	89,	0.44864475,	2011, "987654321",3);
+insert into movielist values("27 Dresses",	"Comedy",	"Fox",	71,	5.3436218,2008, "987654321",3);
+insert into movielist values("500 Days of Summer",	"comedy",	"Fox",	81,	8.096,	2009, "987654321",3);
+
+#Can use to verify insertions
+#select * from library;
+#select * from movielist;
