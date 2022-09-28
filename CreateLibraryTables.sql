@@ -44,7 +44,7 @@ create table movielist
 create table audiolist
 (
 	release_date	date not null,
-	album			varchar(60),
+	album			varchar(100),
 	artist			varchar(60) not null,
 	genre			varchar(60),
 	sub_genre		varchar(60),
