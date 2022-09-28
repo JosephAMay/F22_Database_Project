@@ -16,7 +16,6 @@ create table booklist
 (
 	Auth_Fname 		varchar (20), 
     Auth_Lname 		varchar (20), 
-	pub_date 		date Not null,
 	publisher		varchar (35) NOT NULL,
 	title			varchar(50) NOT NULL,
 	num_copies      int NOT NULL,
