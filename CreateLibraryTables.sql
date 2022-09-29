@@ -57,11 +57,13 @@ create table cardholder
 	 Fname			varchar(20) not null,	
 	 Lname			varchar(20) not null,	
 	 cardID			char(5) not null,
-	 signup_date	date,
+	 signup_date	        date,
 	 overdue		char(1) not null,
 	 fees			decimal(10,2),
 	 address		varchar(30) not null,
 	 member_of		char(9) not null,
+	 username               varchar(30),
+     	 password               varchar(20),
      
 	primary key (cardID),
     foreign key(member_of) references library(libraryID)
