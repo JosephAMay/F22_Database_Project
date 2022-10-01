@@ -24,7 +24,7 @@ create table booklist
 	genre			varchar(20),
 	sub_genre		varchar(20),
     
-    primary key(ISBN),
+    primary key(ISBN, housed_in),
     foreign Key(housed_in) references library(libraryID)
 );
 create table movielist
