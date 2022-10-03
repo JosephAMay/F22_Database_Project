@@ -14,13 +14,16 @@ We intend to create a series of useful queries typical users would want from the
 Once we have the data in the database and working queries, we will build out a user interface that allows users to query the database and use the library databse as though it were a real database for a real in use library.
 
 
-#To get the databse up and running:
+# To get the databse up and running:
 1. Use create library tables file to create the database tables.
 2. Then use the insert sql files in the following order
 
 a. insert library movie tables sql file
+
 b. insert audio sql
+
 c. insert booklist sql
+
 d. insert cardHolder & employee
 
 In the furture these files will be merged for conveinance. 
@@ -30,5 +33,5 @@ to restart.
 
 The example queries sql file shows some demo queries we will want to use in the frontend.
 
-#Frontend
+# Frontend
 To run the php code you will need to use mamp or xxamp to set up a web server. Next import the sql tables to phpmyadmin. Next add php files to the map folder named hotdogs. Then in web browser use this link http://localhost:8888/login.php
