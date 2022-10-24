@@ -64,14 +64,14 @@ create table cardholder
 	 Lname			varchar(20) not null,	
 	 cardID			int AUTO_INCREMENT,
 	 signup_date	date DEFAULT '2022-10-03',
-	 overdue		char(1) not null default 0,
+	 overdue		char(1) not null default 0 check(overdue = '1' or overdue = '0'),
 	 fees			decimal(10,2) default 0 check (fees >=0),
 	 address		varchar(30) not null,
 	 member_of		char(9) not null,
      username      varchar(30) default null,
      password       varchar(20) default null,
      
-	primary key (cardID),
+	primary key (cardID, member_of),
     foreign key(member_of) references library(libraryID)
 );
 alter table cardholder auto_increment = 0;
@@ -91,11 +91,10 @@ create table employee
     
     primary key (ssn),
     foreign key (workLocation) references library(libraryID)
-    
 );
 create table onloan
 (
-    cardID          int,
+    cardID          int not null,
     housed_in       char(9) not null,
     bookTitle       varchar(100) default null,
     ISBN            char(13) default null,
@@ -103,7 +102,7 @@ create table onloan
     movie_release   char(4) default null,
     artistName      varchar(100) default null,
     albumName       varchar(100) default null,
-	backBy          date DEFAULT '2022-10-03',
+	backBy          date DEFAULT '2022-10-03' not null,
     transactionNum  int auto_increment not null,
     
     primary key(transactionNum, cardID),
@@ -115,7 +114,7 @@ create table onloan
 );
 create table returned
 (
-	cardID				int,
+	cardID				int not null,
     date_Returned		date not null,
 	transactionNum		int not null,
     
@@ -124,15 +123,3 @@ create table returned
     foreign key(transactionNum) references onloan(transactionNum)
 );
 
-
-#check when return date is past current date, add fee to cardholder, set  overdue to 1
-
-#If all tems that are  overdue are returned, set overdue to 0 for cardholder
-
-#make salary of employee less than manager
-
-#when a book is removed from returned, add to num copies of that item in library it belongs
-
-#If item in onLoan for an item that has 0 num copies, abort transaction
-
-#On update, on delete? 
