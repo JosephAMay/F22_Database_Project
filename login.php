@@ -17,7 +17,7 @@ session_start();
 
 			//read from database
 			//$query = "select * from users where user_name = '$user_name' limit 1";
-			$query = "select * from cardholder where Fname = '$user_name' limit 1";
+			$query = "select * from cardholder where username = '$user_name' limit 1";
 			$result = mysqli_query($con, $query);
 
 			if($result)
@@ -28,7 +28,7 @@ session_start();
 					$user_data = mysqli_fetch_assoc($result);
 					
 					//if($user_data['password'] === $password)
-					if($user_data['cardID'] === $password)	
+					if($user_data['password'] === $password)	
 					{
 
 						//$_SESSION['user_id'] = $user_data['user_id'];
