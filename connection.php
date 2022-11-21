@@ -1,12 +1,15 @@
 <?php
+$servername = "DESKTOP-83VHUOF";
+$username = "php";
+$password = "phpPassword1234!";
+$database = "librarydb";
 
-$dbhost = "localhost:8889";
-$dbuser = "root";
-$dbpass = "root";
-$dbname = "libraryDB";
 
-if(!$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname))
+if(!$con = mysqli_connect($servername,$username,$password,$database))
 {
 
 	die("failed to connect#G##");
 }
+
+
+?>

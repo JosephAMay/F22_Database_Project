@@ -15,7 +15,7 @@ session_start();
 </head>
 <body>
 
-	<a href="logout.php">Logout</a>
+	<a href="login.php">Logout</a>
 	<h1>This is the index page Welcome to Library DBMS</h1>
 
 	<br>
