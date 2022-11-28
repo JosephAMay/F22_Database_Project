@@ -3,7 +3,7 @@ This project aims to replicate a databse like a library would have. This include
 
 # Database Tables
 The database tables are defined in the create tables file. The structure of the tables is was designed to be generally adaptable to any library. We provided 3 catalog tables in the form of a book, movie, and record table. Each catalog table has a corresponding loan table, so book table has a bookloan table that records books that have been loaned, and it is the same for movie and record. We also have an employee table which captures standard employee data, a library table which holds library 
-information like the name of the library, 
+information like the name of the library. We have a uml file in the github you can browse to examine all our tables and how they connect to one another. 
 
 # Data Insertion
 Records are inserted into the database in various files all nominaly beginning with the insert keyword followed by the type of records inserted into the databse (insert_movielist.sql). There is a file called insert all data, which populates the database completely with sample data of different libraries, employees, books, movies, and records. There is no loan information inserted in the insert all data file. This was intentaional so that anyone sampling our work could play around and insert their own values, and get a feel for how our triggers work and see what they would like to change for their own library dtabase.
