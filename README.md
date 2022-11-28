@@ -15,7 +15,7 @@ We have a series of triggers defined in the library tigger definition file. Ther
 
 Once we have the data in the database and working queries, we will build out a user interface that allows users to query the database and use the library databse as though it were a real database for a real in use library.
 
-#Front End
+# Front End
 As we were working we split front end devlopment into two teams, a user team and an employee team. 
 
 1. Use create library tables file to create the database tables.
@@ -40,6 +40,6 @@ The example queries sql file shows some demo queries we will want to use in the 
 To run the php code you will need to use mamp or xxamp to set up a web server. Next import the sql tables to phpmyadmin. Next add php files to the map folder named hotdogs. Then in web browser use this link http://localhost:8888/login.php
 
 
-#User Front End
+# User Front End
 
-#Employee Front End
+# Employee Front End
