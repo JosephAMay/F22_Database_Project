@@ -33,3 +33,9 @@ As we were working we split front end devlopment into two teams, a user team and
 6. From web browser use this link http://localhost:8888/login.php 
 
 # Employee Front End
+1. Download mysql and set up the database and another user for php to connect to
+2. Download xampp 
+3. Open "connection.php" on any editor, make sure the username, password, servername, and database are all correct for your mysql server and user
+4. Make sure you have a mysql server open and you need to open xampp and start the apache server
+5. Open up "htdocs" in your xampp folder you made while installing, and move the files in there
+6. Finally open any browser and type in "localhost" just navigate to "employeeMenu.php" and it should start
