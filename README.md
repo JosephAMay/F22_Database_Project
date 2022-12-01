@@ -32,4 +32,4 @@ As we were working we split front end devlopment into two teams, a user team and
 5. Import  CreateLibraryTables.sql and insert_all_data.sql into libraryDB2 in PhpMyAdmin *Note you must delete lines 1, 2 and 3 from CreateLibraryTables.sql
 6. From web browser use this link http://localhost:8888/login.php 
 
-
+# Employee Front End
